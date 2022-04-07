@@ -9,10 +9,14 @@ body {
     height: 100vh;
 }
 
-#buddon {
+button {
     padding: 4rem;
+    background-color: rgb(124, 182, 17);
 }
+
+#buddon {
+}
+
 #buddon2 {
     background-size: cover;
-    padding: 4rem;
 }
