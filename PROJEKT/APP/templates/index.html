@@ -8,10 +8,13 @@
         <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
         <script>
             const sounds = [
+                new Audio("{% static 'sfx/earrape/shut-cho-bitchass-up.mp3'%}"),
                 new Audio("{% static 'sfx/earrape/worlds-loudest-orgasm-ever.mp3' %}"),
                 new Audio("{% static 'sfx/earrape/windows-xp-startup-earrape_5bIJnK6.mp3' %}"),
                 new Audio("{% static 'sfx/earrape/pan-bonk.mp3' %}"),
                 new Audio("{% static 'sfx/earrape/android-notification-sound-effect-earrape_172SIVW.mp3' %}"),
+                new Audio("{% static 'sfx/earrape/super-idol-bass-boosted.mp3'%}"),
+                new Audio("{% static 'sfx/earrape/elevator-music-earrape.mp3'%}"),   
             ]
         </script>
         <script src="{% static 'js/script.js' %}"></script>
@@ -19,8 +22,10 @@
     </head>
     <body>
         <div id="epic_header"></div>
-        <button id="buddon">--click for funny--</button>
-        <button id="buddon2">&nbsp;</button>
+        <div id="buddons">
+            <button id="buddon">--click for funny--</button>
+            <button id="buddon2">&nbsp;</button>
+        </div>
     </body>
     <style>
         #epic_header {
