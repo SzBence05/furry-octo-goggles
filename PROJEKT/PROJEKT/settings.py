@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-s+@gd8#gla$9m)62coo@*xsq=pc^i@j*h(*8%p$&l16@t$uvo1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['harakireeeee.herokuapp.com', '127.0.0.1']
 
@@ -120,10 +120,11 @@ USE_TZ = True
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
+
 STATICFILES_DIRS = [
     BASE_DIR/'static'
 ]
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = BASE_DIR/'staticfiles'
 
 STATIC_URL = 'static/'
 
